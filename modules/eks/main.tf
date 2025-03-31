@@ -113,7 +113,7 @@ resource "aws_eks_node_group" "node_group" {
   subnet_ids      = var.subnet_ids
 #  vpc_security_group_ids = [aws_security_group.eks_node_sg.id]
   remote_access {
-    ec2_ssh_key = "mariam-key"  # Use your SSH key name here
+    ec2_ssh_key = "TF"  # Use your SSH key name here
     source_security_group_ids = [aws_security_group.eks_node_sg.id]
   }
   scaling_config {
